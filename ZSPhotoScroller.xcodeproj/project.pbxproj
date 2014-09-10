@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DA01D7A36CC4CA9B0FD7A6E /* libPods-ZSPhotoScroller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 192697F5226E4595A165ACA4 /* libPods-ZSPhotoScroller.a */; };
+		ECAF0CDE19C0F5AB0047D269 /* ZSPSImagesDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CDD19C0F5AB0047D269 /* ZSPSImagesDataSources.m */; };
+		ECAF0CE319C0F7F70047D269 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE019C0F7F70047D269 /* ImageScrollView.m */; };
+		ECAF0CE419C0F7F70047D269 /* TilingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE219C0F7F70047D269 /* TilingView.m */; };
+		ECAF0CE719C0FCD00047D269 /* ZSPSImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE619C0FCD00047D269 /* ZSPSImageScrollView.m */; };
+		ECAF0CEA19C1012B0047D269 /* ZSPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE919C1012B0047D269 /* ZSPSViewController.m */; };
 		ECF6045719C0B73B0003C50C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF6045619C0B73B0003C50C /* Foundation.framework */; };
 		ECF6045919C0B73B0003C50C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF6045819C0B73B0003C50C /* CoreGraphics.framework */; };
 		ECF6045B19C0B73B0003C50C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF6045A19C0B73B0003C50C /* UIKit.framework */; };
@@ -22,6 +28,8 @@
 		ECF6047819C0B73B0003C50C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF6045C19C0B73B0003C50C /* CoreData.framework */; };
 		ECF6048019C0B73B0003C50C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECF6047E19C0B73B0003C50C /* InfoPlist.strings */; };
 		ECF6048219C0B73B0003C50C /* ZSPhotoScrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF6048119C0B73B0003C50C /* ZSPhotoScrollerTests.m */; };
+		ECF6049319C0BA110003C50C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF6049219C0BA110003C50C /* Storyboard.storyboard */; };
+		ECF6049F19C0F20C0003C50C /* ZSPSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF6049E19C0F20C0003C50C /* ZSPSScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		192697F5226E4595A165ACA4 /* libPods-ZSPhotoScroller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSPhotoScroller.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E88CC47B4D40FCA3AABEB2 /* Pods-ZSPhotoScroller.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSPhotoScroller.xcconfig"; path = "Pods/Pods-ZSPhotoScroller.xcconfig"; sourceTree = "<group>"; };
+		ECAF0CDC19C0F5AB0047D269 /* ZSPSImagesDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSPSImagesDataSources.h; path = ZSPhotoScroller/Classes/ZSPSImagesDataSources.h; sourceTree = "<group>"; };
+		ECAF0CDD19C0F5AB0047D269 /* ZSPSImagesDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSPSImagesDataSources.m; path = ZSPhotoScroller/Classes/ZSPSImagesDataSources.m; sourceTree = "<group>"; };
+		ECAF0CDF19C0F7F70047D269 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageScrollView.h; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/ImageScrollView.h; sourceTree = "<group>"; };
+		ECAF0CE019C0F7F70047D269 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageScrollView.m; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/ImageScrollView.m; sourceTree = "<group>"; };
+		ECAF0CE119C0F7F70047D269 /* TilingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TilingView.h; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/TilingView.h; sourceTree = "<group>"; };
+		ECAF0CE219C0F7F70047D269 /* TilingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TilingView.m; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/TilingView.m; sourceTree = "<group>"; };
+		ECAF0CE519C0FCD00047D269 /* ZSPSImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSPSImageScrollView.h; path = ZSPhotoScroller/Classes/ZSPSImageScrollView.h; sourceTree = "<group>"; };
+		ECAF0CE619C0FCD00047D269 /* ZSPSImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSPSImageScrollView.m; path = ZSPhotoScroller/Classes/ZSPSImageScrollView.m; sourceTree = "<group>"; };
+		ECAF0CE819C1012B0047D269 /* ZSPSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSPSViewController.h; path = ZSPhotoScroller/Classes/ZSPSViewController.h; sourceTree = "<group>"; };
+		ECAF0CE919C1012B0047D269 /* ZSPSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSPSViewController.m; path = ZSPhotoScroller/Classes/ZSPSViewController.m; sourceTree = "<group>"; };
 		ECF6045319C0B73B0003C50C /* ZSPhotoScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSPhotoScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF6045619C0B73B0003C50C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECF6045819C0B73B0003C50C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +73,9 @@
 		ECF6047D19C0B73B0003C50C /* ZSPhotoScrollerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZSPhotoScrollerTests-Info.plist"; sourceTree = "<group>"; };
 		ECF6047F19C0B73B0003C50C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ECF6048119C0B73B0003C50C /* ZSPhotoScrollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSPhotoScrollerTests.m; sourceTree = "<group>"; };
+		ECF6049219C0BA110003C50C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ZSPhotoScroller/Resources/Storyboard.storyboard; sourceTree = "<group>"; };
+		ECF6049D19C0F20C0003C50C /* ZSPSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSPSScrollView.h; path = ZSPhotoScroller/Classes/ZSPSScrollView.h; sourceTree = "<group>"; };
+		ECF6049E19C0F20C0003C50C /* ZSPSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSPSScrollView.m; path = ZSPhotoScroller/Classes/ZSPSScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +87,7 @@
 				ECF6045D19C0B73B0003C50C /* CoreData.framework in Frameworks */,
 				ECF6045B19C0B73B0003C50C /* UIKit.framework in Frameworks */,
 				ECF6045719C0B73B0003C50C /* Foundation.framework in Frameworks */,
+				4DA01D7A36CC4CA9B0FD7A6E /* libPods-ZSPhotoScroller.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +112,7 @@
 				ECF6047B19C0B73B0003C50C /* ZSPhotoScrollerTests */,
 				ECF6045519C0B73B0003C50C /* Frameworks */,
 				ECF6045419C0B73B0003C50C /* Products */,
+				58E88CC47B4D40FCA3AABEB2 /* Pods-ZSPhotoScroller.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +133,7 @@
 				ECF6045A19C0B73B0003C50C /* UIKit.framework */,
 				ECF6045C19C0B73B0003C50C /* CoreData.framework */,
 				ECF6047419C0B73B0003C50C /* XCTest.framework */,
+				192697F5226E4595A165ACA4 /* libPods-ZSPhotoScroller.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +141,8 @@
 		ECF6045E19C0B73B0003C50C /* ZSPhotoScroller */ = {
 			isa = PBXGroup;
 			children = (
+				ECF6048D19C0B8C20003C50C /* Classes */,
+				ECF6048F19C0B8C20003C50C /* Resources */,
 				ECF6046719C0B73B0003C50C /* ZSPSAppDelegate.h */,
 				ECF6046819C0B73B0003C50C /* ZSPSAppDelegate.m */,
 				ECF6046D19C0B73B0003C50C /* Images.xcassets */,
@@ -153,6 +181,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ECF6048D19C0B8C20003C50C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ECAF0CDF19C0F7F70047D269 /* ImageScrollView.h */,
+				ECAF0CE019C0F7F70047D269 /* ImageScrollView.m */,
+				ECAF0CE119C0F7F70047D269 /* TilingView.h */,
+				ECAF0CE219C0F7F70047D269 /* TilingView.m */,
+				ECF6049D19C0F20C0003C50C /* ZSPSScrollView.h */,
+				ECF6049E19C0F20C0003C50C /* ZSPSScrollView.m */,
+				ECAF0CDC19C0F5AB0047D269 /* ZSPSImagesDataSources.h */,
+				ECAF0CDD19C0F5AB0047D269 /* ZSPSImagesDataSources.m */,
+				ECAF0CE519C0FCD00047D269 /* ZSPSImageScrollView.h */,
+				ECAF0CE619C0FCD00047D269 /* ZSPSImageScrollView.m */,
+				ECAF0CE819C1012B0047D269 /* ZSPSViewController.h */,
+				ECAF0CE919C1012B0047D269 /* ZSPSViewController.m */,
+			);
+			name = Classes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		ECF6048F19C0B8C20003C50C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECF6049219C0BA110003C50C /* Storyboard.storyboard */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECF6048519C0B73B0003C50C /* Build configuration list for PBXNativeTarget "ZSPhotoScroller" */;
 			buildPhases = (
+				94140BCFE4C64215948E677B /* Check Pods Manifest.lock */,
 				ECF6044F19C0B73B0003C50C /* Sources */,
 				ECF6045019C0B73B0003C50C /* Frameworks */,
 				ECF6045119C0B73B0003C50C /* Resources */,
+				D71734D7CE274C07BB45880D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +290,7 @@
 			files = (
 				ECF6046319C0B73B0003C50C /* InfoPlist.strings in Resources */,
 				ECF6046E19C0B73B0003C50C /* Images.xcassets in Resources */,
+				ECF6049319C0BA110003C50C /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +304,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94140BCFE4C64215948E677B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D71734D7CE274C07BB45880D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ZSPhotoScroller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECF6044F19C0B73B0003C50C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -252,6 +345,12 @@
 				ECF6046C19C0B73B0003C50C /* ZSPhotoScroller.xcdatamodeld in Sources */,
 				ECF6046919C0B73B0003C50C /* ZSPSAppDelegate.m in Sources */,
 				ECF6046519C0B73B0003C50C /* main.m in Sources */,
+				ECAF0CE419C0F7F70047D269 /* TilingView.m in Sources */,
+				ECAF0CE319C0F7F70047D269 /* ImageScrollView.m in Sources */,
+				ECAF0CE719C0FCD00047D269 /* ZSPSImageScrollView.m in Sources */,
+				ECAF0CDE19C0F5AB0047D269 /* ZSPSImagesDataSources.m in Sources */,
+				ECAF0CEA19C1012B0047D269 /* ZSPSViewController.m in Sources */,
+				ECF6049F19C0F20C0003C50C /* ZSPSScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +464,7 @@
 		};
 		ECF6048619C0B73B0003C50C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E88CC47B4D40FCA3AABEB2 /* Pods-ZSPhotoScroller.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -372,12 +472,14 @@
 				GCC_PREFIX_HEADER = "ZSPhotoScroller/ZSPhotoScroller-Prefix.pch";
 				INFOPLIST_FILE = "ZSPhotoScroller/ZSPhotoScroller-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		ECF6048719C0B73B0003C50C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E88CC47B4D40FCA3AABEB2 /* Pods-ZSPhotoScroller.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -385,6 +487,7 @@
 				GCC_PREFIX_HEADER = "ZSPhotoScroller/ZSPhotoScroller-Prefix.pch";
 				INFOPLIST_FILE = "ZSPhotoScroller/ZSPhotoScroller-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -448,6 +551,7 @@
 				ECF6048719C0B73B0003C50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECF6048819C0B73B0003C50C /* Build configuration list for PBXNativeTarget "ZSPhotoScrollerTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +560,7 @@
 				ECF6048A19C0B73B0003C50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZSPSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ZSPSAppDelegate : UIResponder <UIApplicationDelegate, UIPageViewControllerDataSource>
 
 @property (strong, nonatomic) UIWindow *window;
 

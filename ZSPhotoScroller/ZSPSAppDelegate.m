@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 rscnt. All rights reserved.
 //
 
+#import "ZSPSImageScrollView.h"
+#import "ZSPSViewController.h"
 #import "ZSPSAppDelegate.h"
 
 @implementation ZSPSAppDelegate
@@ -16,10 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    ZSPSViewController *firstPage = [[ZSPSViewController alloc] init];
+    // kick things off by making the first page
+    if (firstPage != nil)
+    {
+        // assign the first page to the pageViewController (our rootViewController)
+        UIPageViewController *pageViewController = (UIPageViewController *)self.window.rootViewController;
+        pageViewController.dataSource = self;
+        [pageViewController setViewControllers:@[firstPage]
+                                      direction:UIPageViewControllerNavigationDirectionForward
+                                       animated:YES
+                                     completion:NULL];
+    }
     return YES;
 }
 
@@ -144,6 +154,18 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+-(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    ZSPSViewController *firstPage = [[ZSPSViewController alloc] init];
+    return firstPage;
+}
+
+-(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+    ZSPSViewController *firstPage = [[ZSPSViewController alloc] init];
+    return firstPage;
 }
 
 @end
