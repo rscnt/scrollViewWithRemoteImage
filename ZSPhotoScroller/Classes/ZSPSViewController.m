@@ -22,6 +22,24 @@
     return self;
 }
 
+-(instancetype)initWithStringURL:(NSString *)url
+{
+    self = [super initWithNibName:nil bundle:nil];
+    if (self) {
+        _url = [[NSURL alloc] initWithString:url];
+    }
+    return self;
+};
+
+-(instancetype)initWithURL:(NSURL *)url
+{
+    self = [super initWithNibName:nil bundle:nil];
+    if(self) {
+        _url = url;
+    }
+    return self;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,6 +47,27 @@
         // Custom initialization
     }
     return self;
+}
+
+#pragma mark lazy getters.
+
+-(ZSPSImageScrollView *) _scrollImage
+{
+    return _scrollImage;
+}
+
+#pragma mark image setters.
+
+-(BOOL)setURLOfImageToScroll:(NSString *)url
+{
+    _url = [NSURL URLWithString:url];
+    return YES;
+}
+
+-(BOOL)setUIImageToScroll:(UIImage *)image
+{
+    [_scrollImage setUIImageToScroll:image];
+    return YES;
 }
 
 - (void)viewDidLoad
@@ -39,12 +78,11 @@
 
 -(void)loadView
 {
-    ZSPSImageScrollView *v = [[ZSPSImageScrollView alloc]
-                              initWithURLOfImage:[NSURL
-                                                  URLWithString:@"http://modelsensation.com/wp-content/uploads/2011/03/5-640x640.jpg"]];
-    v.backgroundColor = [UIColor colorWithRed:0.696 green:0.655 blue:0.247 alpha:0.640];
-    v.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    self.view = v;
+    _scrollImage = [[ZSPSImageScrollView alloc] init];
+    // Aditional tweaks.
+    [_scrollImage setURLOfImageToScroll:_url];
+    _scrollImage.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.view = _scrollImage;
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,15 +95,5 @@
 {
     return UIInterfaceOrientationMaskAllButUpsideDown;
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

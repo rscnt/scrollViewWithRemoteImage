@@ -8,6 +8,7 @@
 
 #import "ZSPSImageScrollView.h"
 #import "ZSPSViewController.h"
+#import "ZSPSImagesDataSources.h"
 #import "ZSPSAppDelegate.h"
 
 @implementation ZSPSAppDelegate
@@ -18,18 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ZSPSViewController *firstPage = [[ZSPSViewController alloc] init];
-    // kick things off by making the first page
-    if (firstPage != nil)
-    {
-        // assign the first page to the pageViewController (our rootViewController)
-        UIPageViewController *pageViewController = (UIPageViewController *)self.window.rootViewController;
-        pageViewController.dataSource = self;
-        [pageViewController setViewControllers:@[firstPage]
-                                      direction:UIPageViewControllerNavigationDirectionForward
-                                       animated:YES
-                                     completion:NULL];
-    }
     return YES;
 }
 
@@ -154,18 +143,6 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-}
-
--(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
-{
-    ZSPSViewController *firstPage = [[ZSPSViewController alloc] init];
-    return firstPage;
-}
-
--(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
-{
-    ZSPSViewController *firstPage = [[ZSPSViewController alloc] init];
-    return firstPage;
 }
 
 @end

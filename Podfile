@@ -3,6 +3,7 @@
 
 target "ZSPhotoScroller" do
   pod 'SDWebImage'
+  pod 'JTSImageViewController'
 end
 
 target "ZSPhotoScrollerTests" do

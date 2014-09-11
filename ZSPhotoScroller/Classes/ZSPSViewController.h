@@ -6,8 +6,17 @@
 //  Copyright (c) 2014 rscnt. All rights reserved.
 //
 
+#import "ZSPSImageScrollView.h"
 #import <UIKit/UIKit.h>
 
 @interface ZSPSViewController : UIViewController
+
+@property (nonatomic, strong) NSURL *url;
+@property (nonatomic, strong) ZSPSImageScrollView *scrollImage;
+
+-(instancetype) initWithStringURL:(NSString *)url;
+-(instancetype) initWithURL:(NSURL *)url;
+-(BOOL) setURLOfImageToScroll:(NSString *)string;
+-(BOOL) setUIImageToScroll:(UIImage *)image;
 
 @end

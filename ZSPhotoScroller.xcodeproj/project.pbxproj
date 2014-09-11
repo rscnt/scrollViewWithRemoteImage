@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4DA01D7A36CC4CA9B0FD7A6E /* libPods-ZSPhotoScroller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 192697F5226E4595A165ACA4 /* libPods-ZSPhotoScroller.a */; };
+		EC7D0D2919C22F5A008E9C22 /* ZSPSPageControlForYour.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7D0D2819C22F5A008E9C22 /* ZSPSPageControlForYour.m */; };
 		ECAF0CDE19C0F5AB0047D269 /* ZSPSImagesDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CDD19C0F5AB0047D269 /* ZSPSImagesDataSources.m */; };
 		ECAF0CE319C0F7F70047D269 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE019C0F7F70047D269 /* ImageScrollView.m */; };
 		ECAF0CE419C0F7F70047D269 /* TilingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE219C0F7F70047D269 /* TilingView.m */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		192697F5226E4595A165ACA4 /* libPods-ZSPhotoScroller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSPhotoScroller.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E88CC47B4D40FCA3AABEB2 /* Pods-ZSPhotoScroller.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSPhotoScroller.xcconfig"; path = "Pods/Pods-ZSPhotoScroller.xcconfig"; sourceTree = "<group>"; };
+		EC7D0D2719C22F5A008E9C22 /* ZSPSPageControlForYour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSPSPageControlForYour.h; path = ZSPhotoScroller/Classes/ZSPSPageControlForYour.h; sourceTree = "<group>"; };
+		EC7D0D2819C22F5A008E9C22 /* ZSPSPageControlForYour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSPSPageControlForYour.m; path = ZSPhotoScroller/Classes/ZSPSPageControlForYour.m; sourceTree = "<group>"; };
 		ECAF0CDC19C0F5AB0047D269 /* ZSPSImagesDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSPSImagesDataSources.h; path = ZSPhotoScroller/Classes/ZSPSImagesDataSources.h; sourceTree = "<group>"; };
 		ECAF0CDD19C0F5AB0047D269 /* ZSPSImagesDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSPSImagesDataSources.m; path = ZSPhotoScroller/Classes/ZSPSImagesDataSources.m; sourceTree = "<group>"; };
 		ECAF0CDF19C0F7F70047D269 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageScrollView.h; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/ImageScrollView.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				ECAF0CE619C0FCD00047D269 /* ZSPSImageScrollView.m */,
 				ECAF0CE819C1012B0047D269 /* ZSPSViewController.h */,
 				ECAF0CE919C1012B0047D269 /* ZSPSViewController.m */,
+				EC7D0D2719C22F5A008E9C22 /* ZSPSPageControlForYour.h */,
+				EC7D0D2819C22F5A008E9C22 /* ZSPSPageControlForYour.m */,
 			);
 			name = Classes;
 			path = ..;
@@ -345,6 +350,7 @@
 				ECF6046C19C0B73B0003C50C /* ZSPhotoScroller.xcdatamodeld in Sources */,
 				ECF6046919C0B73B0003C50C /* ZSPSAppDelegate.m in Sources */,
 				ECF6046519C0B73B0003C50C /* main.m in Sources */,
+				EC7D0D2919C22F5A008E9C22 /* ZSPSPageControlForYour.m in Sources */,
 				ECAF0CE419C0F7F70047D269 /* TilingView.m in Sources */,
 				ECAF0CE319C0F7F70047D269 /* ImageScrollView.m in Sources */,
 				ECAF0CE719C0FCD00047D269 /* ZSPSImageScrollView.m in Sources */,
