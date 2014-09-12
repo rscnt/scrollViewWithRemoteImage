@@ -3,7 +3,7 @@
 
 target "ZSPhotoScroller" do
   pod 'SDWebImage'
-  pod 'JTSImageViewController'
+  pod 'UIImage+BlurredFrame'
 end
 
 target "ZSPhotoScrollerTests" do

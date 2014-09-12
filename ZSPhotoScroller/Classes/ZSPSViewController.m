@@ -96,4 +96,14 @@
     return UIInterfaceOrientationMaskAllButUpsideDown;
 }
 
+-(instancetype) initWithStringURL:(NSString *)url andIndex:(NSUInteger)index
+{
+    self = [super init];
+    if (self) {
+        self.index =index;
+        _url = [NSURL URLWithString:url];
+    }
+    return self;
+};
+
 @end

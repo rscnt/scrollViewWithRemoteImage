@@ -53,7 +53,6 @@
     } else {
         [_image removeFromSuperview];
     }
-    NSLog(@"URL IS : %@", url);
     [_image
      sd_setImageWithURL:url
      completed:^(UIImage *image, NSError *error,

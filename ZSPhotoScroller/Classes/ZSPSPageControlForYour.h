@@ -6,10 +6,18 @@
 //  Copyright (c) 2014 rscnt. All rights reserved.
 //
 
+#import "ZSPSImagesDataSources.h"
 #import <UIKit/UIKit.h>
 
-@interface ZSPSPageControlForYour : UIPageViewController
+@interface ZSPSPageControlForYour : UIPageViewController <UIPageViewControllerDataSource>
 
-@property (strong, nonatomic) ZSPSImagesDataSources *dataSource_;
+@property (nonatomic) NSUInteger index;
+
+-(instancetype) initWithArraysOfURLs:(NSArray*)urls;
+-(instancetype) initWithArraysOfURLs:(NSArray *)urls atIndex:(NSUInteger)index;
+-(ZSPSViewController *) getFirstViewController;
+-(ZSPSViewController *) getLastViewController;
+-(ZSPSViewController *) getViewControllerAtIndex:(NSUInteger)index;
+-(NSUInteger)imageCount;
 
 @end

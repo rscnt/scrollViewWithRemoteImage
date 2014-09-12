@@ -10,7 +10,6 @@
 		4DA01D7A36CC4CA9B0FD7A6E /* libPods-ZSPhotoScroller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 192697F5226E4595A165ACA4 /* libPods-ZSPhotoScroller.a */; };
 		EC7D0D2919C22F5A008E9C22 /* ZSPSPageControlForYour.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7D0D2819C22F5A008E9C22 /* ZSPSPageControlForYour.m */; };
 		ECAF0CDE19C0F5AB0047D269 /* ZSPSImagesDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CDD19C0F5AB0047D269 /* ZSPSImagesDataSources.m */; };
-		ECAF0CE319C0F7F70047D269 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE019C0F7F70047D269 /* ImageScrollView.m */; };
 		ECAF0CE419C0F7F70047D269 /* TilingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE219C0F7F70047D269 /* TilingView.m */; };
 		ECAF0CE719C0FCD00047D269 /* ZSPSImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE619C0FCD00047D269 /* ZSPSImageScrollView.m */; };
 		ECAF0CEA19C1012B0047D269 /* ZSPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF0CE919C1012B0047D269 /* ZSPSViewController.m */; };
@@ -50,8 +49,6 @@
 		EC7D0D2819C22F5A008E9C22 /* ZSPSPageControlForYour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSPSPageControlForYour.m; path = ZSPhotoScroller/Classes/ZSPSPageControlForYour.m; sourceTree = "<group>"; };
 		ECAF0CDC19C0F5AB0047D269 /* ZSPSImagesDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSPSImagesDataSources.h; path = ZSPhotoScroller/Classes/ZSPSImagesDataSources.h; sourceTree = "<group>"; };
 		ECAF0CDD19C0F5AB0047D269 /* ZSPSImagesDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSPSImagesDataSources.m; path = ZSPhotoScroller/Classes/ZSPSImagesDataSources.m; sourceTree = "<group>"; };
-		ECAF0CDF19C0F7F70047D269 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageScrollView.h; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/ImageScrollView.h; sourceTree = "<group>"; };
-		ECAF0CE019C0F7F70047D269 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageScrollView.m; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/ImageScrollView.m; sourceTree = "<group>"; };
 		ECAF0CE119C0F7F70047D269 /* TilingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TilingView.h; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/TilingView.h; sourceTree = "<group>"; };
 		ECAF0CE219C0F7F70047D269 /* TilingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TilingView.m; path = ../../../Books/ObjC/Documentation/PhotoScroller/Classes/TilingView.m; sourceTree = "<group>"; };
 		ECAF0CE519C0FCD00047D269 /* ZSPSImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSPSImageScrollView.h; path = ZSPhotoScroller/Classes/ZSPSImageScrollView.h; sourceTree = "<group>"; };
@@ -187,8 +184,6 @@
 		ECF6048D19C0B8C20003C50C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				ECAF0CDF19C0F7F70047D269 /* ImageScrollView.h */,
-				ECAF0CE019C0F7F70047D269 /* ImageScrollView.m */,
 				ECAF0CE119C0F7F70047D269 /* TilingView.h */,
 				ECAF0CE219C0F7F70047D269 /* TilingView.m */,
 				ECF6049D19C0F20C0003C50C /* ZSPSScrollView.h */,
@@ -352,7 +347,6 @@
 				ECF6046519C0B73B0003C50C /* main.m in Sources */,
 				EC7D0D2919C22F5A008E9C22 /* ZSPSPageControlForYour.m in Sources */,
 				ECAF0CE419C0F7F70047D269 /* TilingView.m in Sources */,
-				ECAF0CE319C0F7F70047D269 /* ImageScrollView.m in Sources */,
 				ECAF0CE719C0FCD00047D269 /* ZSPSImageScrollView.m in Sources */,
 				ECAF0CDE19C0F5AB0047D269 /* ZSPSImagesDataSources.m in Sources */,
 				ECAF0CEA19C1012B0047D269 /* ZSPSViewController.m in Sources */,

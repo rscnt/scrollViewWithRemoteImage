@@ -9,7 +9,7 @@
 #import "ZSPSViewController.h"
 #import <Foundation/Foundation.h>
 
-@interface ZSPSImagesDataSources : UIResponder <UIPageViewControllerDataSource>
+@interface ZSPSImagesDataSources : UIPageViewController <UIPageViewControllerDataSource>
 
 @property (nonatomic) NSUInteger index;
 

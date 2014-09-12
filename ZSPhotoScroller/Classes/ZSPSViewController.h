@@ -11,10 +11,12 @@
 
 @interface ZSPSViewController : UIViewController
 
+@property (nonatomic) NSUInteger index;
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) ZSPSImageScrollView *scrollImage;
 
 -(instancetype) initWithStringURL:(NSString *)url;
+-(instancetype) initWithStringURL:(NSString *)url andIndex:(NSUInteger)index;
 -(instancetype) initWithURL:(NSURL *)url;
 -(BOOL) setURLOfImageToScroll:(NSString *)string;
 -(BOOL) setUIImageToScroll:(UIImage *)image;
